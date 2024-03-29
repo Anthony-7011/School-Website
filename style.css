@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+  img {
+    width: 100px
+  }
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("Velammal-Global-School.jpeg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  nav {
+    background: white;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 4px 6px;
+  }
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 30px;
+  
+  }
+  .nav-links ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 25px;
+  }
+  .nav-links ul li::after {
+      content: '';
+      display: block;
+      background: orange;
+      height: 2px;
+      width: 0%;
+      margin: auto;
+      transition: 0.5s;
+  }
+  .nav-links ul li:hover::after {
+       width: 100%
+  }
+  .text-box {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .point img {
+    background-position: center;
+    position: relative;
+    background-size: cover;
+  }
+  .point {
+    flex-basis: 31%;
+    padding: 20px 12px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 10px solid darkgreen;
+    background: lightgreen;
+  }
+  .text-box h1 {
+    font-size: 65px;
+    padding-bottom: 10%;
+  }
+  .text-box p {
+    margin: 10px 0px 40px;
+    font-size: 14px;
+    text-align: left;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+.hero-btn {
+  text-decoration: none;
+  font-size: 25px;
+  display: inline-block;
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: 1s;
+  padding: 12px 34px;
+  border-radius: 10px;
+  scroll-behavior: smooth;
+}
+.hero-btn:hover {
+  background: orange;
+  border: 1px solid orange;
+  box-shadow: black;
+}
+body {
+  padding-bottom: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.content {
+  color: black;
+  position: absolute;
+  top: 1400px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  margin: 30px;
+}
+.content h1 {
+  font-size: 65px;
+  font-family: 'Roboto Slab', serif;
+}
+.content ul {
+  list-style: none;
+}
+.content ul li {
+  border: 1px solid pink;
+  box-shadow: black;
+  border-radius: 10px;
+  margin: 30px;
+  background: pink;
+  padding: 15px 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+.detail {
+  color: black;
+  position: absolute;
+  top: 2000px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  margin: 30px;
+}
+.detail h1 {
+  font-size: 65px;
+  left: 30%;
+  font-family: 'Roboto Slab', serif;
+}
+.detail ul {
+  list-style: none;
+  display: flex;
+}
+.detail ul li {
+  border: 1px solid pink;
+  box-shadow: black;
+  border-radius: 10px;
+  margin: 40px;
+  background: #FEA996;
+  padding: 15px 60px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+hr {
+  margin-top: -500px;
+}
+footer {
+  background: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 400px;
+  width: 100%;
+  padding-top: 40px;
+  position: absolute;
+  bottom: -2000px;
+  left: 0;
+  right: 0;
+}
+.author h1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Bona Nova', serif;
+}
+.author h3 {
+  padding-top: 30px;
+  color: white;
+  text-align: center;
+}
+.btn {
+  border: 1px solid white;
+  background: transparent; 
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+  transition: 1s;
+  padding: 12px 35px;
+  font-size: 25px;
+  color: white;
+  left: 45%;
+  top: 50px;
+}
+.btn:hover {
+  background: orange;
+  border: 1px solid orange;
+}
+.modal-container{
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+}
+.modal {
+  color: white;
+  background-color: teal;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  transform: translate(-50%,-50%);
+  max-width: 100%;
+  width: 500px;
+  height: 300px;
+}
+.modal-content {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+}
+.header1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  line-height: 1.5; 
+}
+.logo {
+  font-family: 'Lobster';
+  font-size: 35px;
+}
+.tagline {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.close-btn {
+  background: transparent;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  outline: none;
+  border: none;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.rounded {
+  margin: auto;
+  width: 100px;
+}
+.rounded img {
+  border-radius: 50%;
+  padding-top: 30px;
+}
